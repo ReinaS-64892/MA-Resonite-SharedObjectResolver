@@ -6,7 +6,7 @@
 
 ## 何故外部に？
 
-[modular-avatar-resonite](https://github.com/bdunderscore/modular-avatar-resonite) は基本的に Windows のみサポートであり、必要な `.so` の増加や アップデートが必要になるたびに PR を送りリリースを待つのは非効率なため、責任領域の分割もあり、Linux に住む人が別でメンテナーとなれる外部のパッケージになっています。
+[modular-avatar-resonite](https://github.com/bdunderscore/modular-avatar-resonite) は基本的に Windows のみサポートであり、必要な `.so` の増加や アップデートが必要になるたびに PR を送りリリースを待つのは非効率なため、責任領域の分割もあり、Linux に住む[私](https://github.com/ReinaS-64892)が別でメンテナーとなれる外部のパッケージになっています。
 
 ## かき集めるタイミング
 
