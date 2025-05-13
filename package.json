@@ -1,0 +1,9 @@
+{
+  "name": "net.rs64.ma-resonite-shared-object-resolver",
+  "displayName": "MA-Resonite SharedObject Resolver",
+  "version": "0.0.0",
+  "unity": "2022.3",
+  "description": "",
+  "dependencies": {},
+  "license": "MIT"
+}
