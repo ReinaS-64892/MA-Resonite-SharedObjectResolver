@@ -26,7 +26,7 @@
 
 dotnet 9.0 と powershell が必要です。環境に応じたパッケージマネージャーを使用し適宜インストールしてください。
 
-exsample(arch)
+exsample(arch & aur helper is paru)
 
 ```bash
 [Reina@RS-ArchMainPC ~]$ paru -S dotnet-sdk-9.0
