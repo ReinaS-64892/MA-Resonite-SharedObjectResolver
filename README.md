@@ -37,12 +37,12 @@ exsample(arch & aur helper is paru)
 
 `UnityProjectRoot/Package/modular-avatar-resonite` になるように `https://github.com/bdunderscore/modular-avatar-resonite` を `git clone` してください。
 
-### Resonite への symblic link
+### Resonite への symbolic link
 
 from `/modular-avatar-resonite/Resonite~/ResoniteHook`  
 to `/home/${USER}/.local/share/Steam/steamapps/common/Resonite`
 
-となるように symblic link を作成してください
+となるように symbolic link を作成してください
 
 もし Resonite のインストール場所が違う場合はそれに応じて書き換えてください。
 
@@ -114,7 +114,7 @@ Editor  Editor.meta  LICENSE.md  LICENSE.md.meta  package.json  package.json.met
 
 ### 最後に
 
-あとは UnityEditor の DomainReload を待った後に、通常の手順と同様に`実験的な機能`を有効化し`NDMF Console` からビルドをいましょう。
+あとは UnityEditor の DomainReload を待った後に、通常の手順と同様に`実験的な機能`を有効化し`NDMF Console` からビルドを行いましょう。
 
 [公式ドキュメント](https://modular-avatar.nadena.dev/dev/ja/docs/experimental-features/resonite-support)
 
