@@ -39,7 +39,7 @@ exsample(arch & aur helper is paru)
 
 ### Resonite への symbolic link
 
-from `/modular-avatar-resonite/Resonite~/ResoniteHook`  
+from `/modular-avatar-resonite/Resonite~/ResoniteDir`  
 to `/home/${USER}/.local/share/Steam/steamapps/common/Resonite`
 
 となるように symbolic link を作成してください
