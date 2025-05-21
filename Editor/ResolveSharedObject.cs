@@ -29,7 +29,7 @@ namespace net.rs64.MAResonite.SharedObjectResolver
             await File.WriteAllTextAsync(resolvedMarker, ResolveBumpVersion + "\nSharedObjectResolved! generate this text from MA-Resonite-SharedObjectResolver.");
 
             using var httpClient = new HttpClient();
-            async Task GetLibFromNuget(string url, IEnumerable<string> libEntry)
+            async Task GetLibFromZip(string url, IEnumerable<string> libEntry)
             {
 
                 var nugetPackage = await httpClient.GetAsync(url);
@@ -48,10 +48,10 @@ namespace net.rs64.MAResonite.SharedObjectResolver
                 }
             }
 
-            Task.WaitAll(NeedSharedObjects().Select(a => GetLibFromNuget(a.url, a.libEntry)).ToArray());
+            Task.WaitAll(NeedSharedObjects().Select(a => GetLibFromZip(a.url, a.libEntry)).ToArray());
         }
 
-        internal const int ResolveBumpVersion = 0;
+        internal const int ResolveBumpVersion = 1;
         static IEnumerable<(string url, IEnumerable<string> libEntry)> NeedSharedObjects()
         {
             yield return (
@@ -72,6 +72,10 @@ namespace net.rs64.MAResonite.SharedObjectResolver
             yield return (
                 "https://www.nuget.org/api/v2/package/SteamAudio.NET.Natives/4.5.3",
                 new[] { "runtimes/linux-x64/native/libphonon.so" }
+                );
+            yield return (
+                "https://www.nuget.org/api/v2/package/Brotli.NET/2.1.1",
+                new[] { "runtimes/linux-x64/native/brolib_x64.so" }
                 );
         }
     }
