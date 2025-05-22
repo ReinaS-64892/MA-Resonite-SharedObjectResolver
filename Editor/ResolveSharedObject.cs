@@ -51,7 +51,7 @@ namespace net.rs64.MAResonite.SharedObjectResolver
             Task.WaitAll(NeedSharedObjects().Select(a => GetLibFromZip(a.url, a.libEntry)).ToArray());
         }
 
-        internal const int ResolveBumpVersion = 2;
+        internal const int ResolveBumpVersion = 3;
         static IEnumerable<(string url, IEnumerable<string> libEntry)> NeedSharedObjects()
         {
             yield return (
@@ -75,7 +75,7 @@ namespace net.rs64.MAResonite.SharedObjectResolver
                 );
             yield return (
                 "https://www.nuget.org/api/v2/package/Brotli.NET/2.1.1",
-                new[] { "runtimes/linux-x64/native/brolib_x64.so" }
+                new[] { "runtimes/linux/native/brolib_x64.so" }
                 );
             yield return (
                 "https://github.com/ReinaS-64892/msdfgen-ydms-binary/releases/download/202505220923/msdf-gen-ydms-binary.zip",
